@@ -5,7 +5,6 @@
 <ul>
   <li>Java 11+ (probado con <strong>JDK 21</strong>).</li>
   <li>Maven 3.8+.</li>
-  <li>Api pública <code>https://serverest.dev</code>).</li>
 </ul>
 
 <h2>Configuración</h2>
