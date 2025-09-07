@@ -46,7 +46,7 @@ function fn() {
 <h3>Opción 2 — Por etiqueta</h3>
 <pre><code># Solo escenarios felices @smoke
 mvn --% -Dtest=runner.RunnerTest -Dkarate.options="--tags @smoke" test
-<img width="1913" height="424" alt="image" src="./img/WhatsApp Image 2025-09-07 at 6.19.29 PM.jpeg" />
+<img width="1913" height="424" alt="image" src="./img/smokeScenario.jpeg" />
 <img width="1913" height="424" alt="image" src="./img/smokeRegisterUser.jpeg" />
 # Un endpoint específico
 mvn --% -Dtest=runner.RunnerTest -Dkarate.options="--tags @UpdateUser" test
