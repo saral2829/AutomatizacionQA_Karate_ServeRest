@@ -44,36 +44,22 @@ function fn() {
 <img width="1913" height="424" alt="image" src="https://github.com/user-attachments/assets/7e42dc67-96c9-43a8-8774-3673132d54cb" />
 
 <h3>Opción 2 — Por etiqueta</h3>
-<pre><code># Solo smoke (escenarios felices)
-mvn -Dtest=runner.RunnerTest -Dkarate.options="--tags @smoke" test
+<pre><code># Solo escenarios felices @smoke
 mvn --% -Dtest=runner.RunnerTest -Dkarate.options="--tags @smoke" test
-
+<img width="1913" height="424" alt="image" src="./img/WhatsApp Image 2025-09-07 at 6.19.29 PM.jpeg" />
+<img width="1913" height="424" alt="image" src="./img/smokeRegisterUser.jpeg" />
 # Un endpoint específico
-mvn -Dtest=runner.RunnerTest -Dkarate.options="--tags @UpdateUser" test
+mvn --% -Dtest=runner.RunnerTest -Dkarate.options="--tags @UpdateUser" test
 </code></pre>
-
+<img width="1913" height="424" alt="image" src="./img/featureUpdateUser.jpeg" />
+<img width="1913" height="424" alt="image" src="./img/UpdateUser.jpeg" />
 <h3>Opción 3 — Un feature específico</h3>
-<pre><code>mvn -Dtest=runner.RunnerTest -Dkarate.options="classpath:resources/feature/users/SearchUserId.feature" test
+<pre><code>mvn --% -Dtest=runner.RunnerTest -Dkarate.options="classpath:resources/feature/users/SearchUserId.feature" test
 </code></pre>
 
-<h3>Perfiles / Entornos (opcional)</h3>
-<pre><code>mvn -Dtest=runner.RunnerTest -Dkarate.env=qa -DbaseUrl=https://serverest.dev test
-</code></pre>
+<img width="1913" height="424" alt="image" src="./img/FeatureSpecific.jpeg" />
+<img width="1913" height="424" alt="image" src="./img/SearchId.jpeg" />
 
-<h3>Desde IntelliJ (opcional)</h3>
-<ol>
-  <li>Click derecho en <code>runner/RunnerTest.java</code> → <span class="kbd">Run 'RunnerTest'</span>.</li>
-  <li>Para pasar opciones:
-    <ul>
-      <li><em>Run/Debug Configurations → JUnit (RunnerTest) → VM options</em>:
-        <pre><code>-Dkarate.options="--tags @smoke"
-</code></pre>
-      </li>
-      <li>O crea una config <strong>Maven</strong> con:
-        <pre><code>test -Dtest=runner.RunnerTest -Dkarate.options="--tags @smoke"
-</code></pre>
-      </li>
-    </ul>
-  </li>
-</ol>
+
+
 
