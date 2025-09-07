@@ -30,8 +30,10 @@ function fn() {
   <span class="chip">@ListUsers</span>
   <span class="chip">@DeleteUser</span>
   <span class="chip">@smoke</span>
+  <span class="chip">@negativo</span>
 </div>
 <p class="note">La etiqueta <code>@smoke</code> marca solo los escenarios felices.</p>
+<p class="note">La etiqueta <code>@negativo</code> marca solo los escenarios con error</p>
 
 <h2>▶️ Ejecución</h2>
 
@@ -39,10 +41,13 @@ function fn() {
 <p>Ejecuta todos los <code>.feature</code> bajo <code>resources/feature/users</code> vía el runner JUnit:</p>
 <pre><code>mvn -Dtest=runner.RunnerTest test
 </code></pre>
+<pre><code>mvn --% -Dtest=runner.RunnerTest test
+</code></pre>
 
 <h3>Opción 2 — Por etiqueta</h3>
 <pre><code># Solo smoke (escenarios felices)
 mvn -Dtest=runner.RunnerTest -Dkarate.options="--tags @smoke" test
+mvn --% -Dtest=runner.RunnerTest -Dkarate.options="--tags @smoke" test
 
 # Un endpoint específico
 mvn -Dtest=runner.RunnerTest -Dkarate.options="--tags @UpdateUser" test
