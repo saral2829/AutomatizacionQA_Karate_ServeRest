@@ -45,7 +45,7 @@ function fn() {
 
 <h3>Opción 2 — Por etiqueta</h3>
 <pre><code># Solo escenarios felices @smoke
-mvn --% -Dtest=runner.RunnerTest -Dkarate.options="--tags @smoke" test
+mvn --% -Dtest=runner.RunnerTest -Dkarate.options="--tags @smoke" test</code></pre>
 <img width="1913" height="424" alt="image" src="./img/smokeScenario.jpeg" />
 <img width="1913" height="424" alt="image" src="./img/smokeRegisterUser.jpeg" />
 # Un endpoint específico
