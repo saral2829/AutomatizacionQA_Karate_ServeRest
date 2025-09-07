@@ -39,10 +39,9 @@ function fn() {
 
 <h3>Opción 1 — Todo el suite (paralelo)</h3>
 <p>Ejecuta todos los <code>.feature</code> bajo <code>resources/feature/users</code> vía el runner JUnit:</p>
-<pre><code>mvn -Dtest=runner.RunnerTest test
-</code></pre>
 <pre><code>mvn --% -Dtest=runner.RunnerTest test
 </code></pre>
+<img width="1913" height="424" alt="image" src="https://github.com/user-attachments/assets/7e42dc67-96c9-43a8-8774-3673132d54cb" />
 
 <h3>Opción 2 — Por etiqueta</h3>
 <pre><code># Solo smoke (escenarios felices)
