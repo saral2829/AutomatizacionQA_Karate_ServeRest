@@ -12,9 +12,9 @@ class RunnerTest {
     @Test
     void testParallel() {
         Results results = Runner.path("classpath:resources/feature/users")
-                //.tags("@smoke")
+                //.tags("@negativo")
                 // .outputCucumberJson(true)
-                .parallel(5);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 }
